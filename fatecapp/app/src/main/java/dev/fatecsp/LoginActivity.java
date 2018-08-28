@@ -84,7 +84,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     }
 
     private void showLoginFragment() {
-        Objects.requireNonNull(getSupportActionBar()).setTitle("Login");
+//        Objects.requireNonNull(getSupportActionBar()).setTitle("Login");
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         loginFragment = LoginFragment.newInstance("","");
