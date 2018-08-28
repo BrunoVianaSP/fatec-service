@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+
+        <include layout="@layout/layout_app_name" />
+
+        <include layout="@layout/layout_email" />
+
+        <include layout="@layout/layout_password" />
+
+        <include layout="@layout/layout_login_management" />
+
+
+        <Button
+            android:id="@+id/email_sign_in_button"
+            style="@style/button"
+            android:text="@string/action_sign_in" />
+
+        <TextView
+            style="@style/normalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Ou"
+            android:textAlignment="center"
+            android:autoLink="all"
+            android:textColorLink="@color/white"
+            />
+
+        <Button
+            style="@style/button"
+            android:text="@string/action_facebook_login"
+            android:drawableLeft="@drawable/logo_facebook"
+            android:background="@color/facebook_blue"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <Button
+            style="@style/button"
+            android:text="@string/google_login_Text"
+            android:drawableLeft="@drawable/logo_google"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

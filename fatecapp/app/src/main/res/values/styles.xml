@@ -17,4 +17,212 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+
+
+
+
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/primaryColor</item>-->
+        <!--<item name="colorPrimaryDark">@color/primaryDarkColor</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="android:textColor">@color/primaryTextColor</item>-->
+        <!--<item name="android:buttonStyle">@style/button</item>-->
+        <!--<item name="android:textViewStyle">@style/textView</item>-->
+        <!--<item name="android:fontFamily">sans-serif-condensed</item>-->
+        <!--<item name="colorControlNormal">@color/white</item>-->
+        <!--<item name="colorControlActivated">@color/white</item>-->
+        <!--<item name="colorControlHighlight">@color/white</item>-->
+        <!--<item name="toolbarStyle">@style/ToolBarStyle</item>-->
+        <!--<item name="tooltipForegroundColor">@color/white</item>-->
+        <!--<item name="titleTextColor">@color/primaryTextColor</item>-->
+        <!--<item name="actionBarItemBackground">@color/primaryTextColor</item>-->
+        <!--<item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>-->
+        <!--<item name="alertDialogStyle">@style/AlertDialogStyle</item>-->
+        <!--<item name="android:actionMenuTextColor">@color/black</item>-->
+    <!--</style>-->
+
+    <!--<style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">-->
+        <!--<item name="android:colorAccent">@color/black</item>-->
+        <!--<item name="android:textColor">@color/black</item>-->
+        <!--<item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>-->
+        <!--<item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>-->
+    <!--</style>-->
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--<style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">-->
+        <!--<item name="android:tint">@color/primaryTextColor</item>-->
+    <!--</style>-->
+
+    <!--<style name="ToolBarStyle" parent="Theme.AppCompat">-->
+        <!--<item name="android:textColorPrimary">@color/primaryTextColor</item>-->
+        <!--<item name="android:textColorSecondary">@color/primaryTextColor</item>-->
+        <!--<item name="actionMenuTextColor">@color/primaryTextColor</item>-->
+    <!--</style>-->
+
+
+    <!--<style name="FullscreenTheme" parent="AppTheme">-->
+        <!--<item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>-->
+        <!--<item name="android:windowActionBarOverlay">true</item>-->
+        <!--<item name="android:windowBackground">@null</item>-->
+        <!--<item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>-->
+        <!--<item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>-->
+    <!--</style>-->
+
+    <!--<style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">-->
+        <!--<item name="android:background">@color/black_overlay</item>-->
+    <!--</style>-->
+
+    <style name="button" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/small_margin</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="buttonNavigate" parent="button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_navigate</item>
+        <item name="android:layout_margin">@dimen/tiny_margin</item>
+        <item name="android:textSize">@dimen/big_text_size</item>
+    </style>
+
+    <style name="modalCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/card</item>
+    </style>
+
+    <style name="textView" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="titleStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="descriptionStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">3</item>
+    </style>
+
+    <style name="infoTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/ice</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
+
+    <style name="infoWarnTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
+
+
+
+    <style name="normalTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
+
+    <style name="smallTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+
+
+
+    <style name="textInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/primaryTextColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <!--<item name="android:background">@color/primaryColor</item>-->
+    </style>
+
+    <style name="radioButton">
+        <item name="android:background">@drawable/radio</item>
+    </style>
+
+    <!--<style name="AppTheme.PopupOverlay" parent="Platform.ThemeOverlay.AppCompat.Dark" >-->
+        <!--&lt;!&ndash;<item name="colorPrimary">@color/primaryDarkColor</item>&ndash;&gt;-->
+    <!--</style>-->
+
+    <!--<style name="AppTheme.AppBarOverlay" parent="AppTheme">-->
+        <!--&lt;!&ndash;<item name="colorPrimary">@color/primaryDarkColor</item>&ndash;&gt;-->
+
+        <!--<item name="android:textColor">@color/white</item>-->
+        <!--<item name="android:textStyle">bold</item>-->
+
+    <!--</style>-->
+
+    <!--<style name="customCardView" parent="CardView.Light">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="cardCornerRadius">@dimen/default_radius</item>-->
+        <!--<item name="android:elevation">3dp</item>-->
+
+
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;card_view:cardCornerRadius="@dimen/default_radius"&ndash;&gt;-->
+    <!--</style>-->
+
+    <style name="container">
+        <item name="android:background">@drawable/container</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/default_padding</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+    </style>
+
+    <style name="default_container">
+        <item name="android:background">@drawable/container</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="SwitchCompatStyle" >
+        <item name="thumbTint">@color/switch_thumb_color</item>
+        <item name="trackTint">@color/switch_track_color</item>
+    </style>
+
+
+
 </resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/default_margin"
+    tools:showIn="@layout/fragment_login">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SwitchCompatStyle"
+            android:id="@+id/reminder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/smallTextStyle"
+            android:text="Manter conectado" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        style="@style/smallTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="end"
+        android:text="@string/prompt_forgot_password"
+        android:textAlignment="textEnd"
+        android:autoLink="all"
+        android:textColorLink="@color/white" />
+</LinearLayout>

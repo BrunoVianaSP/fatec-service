@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.SignupFragment"
+    android:padding="@dimen/small_padding">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/layout_full_name"/>
+            <include layout="@layout/layout_cpf"/>
+            <include layout="@layout/layout_cellphone"/>
+            <include layout="@layout/layout_password_confirmation"/>
+            <include layout="@layout/layout_proposal_user_contract"/>
+            <Button
+                android:id="@+id/btnSignup"
+                style="@style/button"
+                android:text="@string/action_sign_up"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

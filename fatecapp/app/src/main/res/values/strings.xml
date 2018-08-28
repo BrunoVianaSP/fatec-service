@@ -1,9 +1,112 @@
 <resources>
-    <string name="app_name">fatecapp</string>
+    <string name="app_name">FATEC SP</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="dummy_number">1</string>
+    <string name="dummy_data">Some Value</string>
+    <string name="dummy_company_name">Company Name</string>
+    <string name="dummy_food_title">Churrasco Brasil</string>
+    <string name="dummy_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed augue sed nisl faucibus dictum sed ut ligula. Integer efficitur gravida ultricies. Nullam hendrerit egestas sem, eu laoreet urna bibendum id. Aliquam non facilisis sapien. Mauris faucibus felis sed lectus ornare sagittis. Nulla lorem enim, ornare non scelerisque quis, dictum ac nulla. Fusce vel erat non odio venenatis auctor.</string>
+    <string name="dummy_footer">Av. Paulista  2335 - 9h às 18h</string>
+    <string name="dummy_legal_terms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed augue sed nisl faucibus dictum sed ut ligula. Integer efficitur gravida ultricies. Nullam hendrerit egestas sem, eu laoreet urna bibendum id. Aliquam non facilisis sapien. Mauris faucibus felis sed lectus ornare sagittis. Nulla lorem enim, ornare non scelerisque quis, dictum ac nulla. Fusce vel erat non odio venenatis auctor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed augue sed nisl faucibus dictum sed ut ligula. Integer efficitur gravida ultricies. Nullam hendrerit egestas sem, eu laoreet urna bibendum id. Aliquam non facilisis sapien. Mauris faucibus felis sed lectus ornare sagittis. Nulla lorem enim, ornare non scelerisque quis, dictum ac nulla. Fusce vel erat non odio venenatis auctor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed augue sed nisl faucibus dictum sed ut ligula. Integer efficitur gravida ultricies. Nullam hendrerit egestas sem, eu laoreet urna bibendum id. Aliquam non facilisis sapien. Mauris faucibus felis sed lectus ornare sagittis. Nulla lorem enim, ornare non scelerisque quis, dictum ac nulla. Fusce vel erat non odio venenatis auctor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed augue sed nisl faucibus dictum sed ut ligula. Integer efficitur gravida ultricies. Nullam hendrerit egestas sem, eu laoreet urna bibendum id. Aliquam non facilisis sapien. Mauris faucibus felis sed lectus ornare sagittis. Nulla lorem enim, ornare non scelerisque quis, dictum ac nulla. Fusce vel erat non odio venenatis auctor.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_user">User</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="prompt_full_name">Full Name</string>
+    <string name="prompt_cpf">CPF (Mandatory)</string>
+    <string name="prompt_cell_phone">Cellphone number</string>
+    <string name="prompt_password_confirmation">Confirm your password</string>
+    <string name="proposal_notification">Receive emails with news and sales.</string>
+    <string name="proposal_user_contract">I agree with terms and conditions while using this app.</string>
+    <string name="dummy_user_name">Bruno Viana</string>
+    <string name="prompt_favorites">Favoritos</string>
+    <string name="prompt_personal">Perfil</string>
+    <string name="prompt_help">Ajuda</string>
+    <string name="prompt_alarms">Alarmes</string>
+    <string name="prompt_orders">Pedidos</string>
+    <string name="prompt_settings">Configurações</string>
+    <string name="prompt_suggestions">Sugestões</string>
+    <string name="dummy_place_name">Playball Santana</string>
+    <string name="dummy_place_type">Society</string>
+    <string name="prompt_see_more">Ver mais</string>
+    <string name="dummy_rate">4,7</string>
+    <string name="prompt_see_rates">Ver avaliações</string>
+    <string name="dummy_minutes_range">45-60</string>
+    <string name="prompt_minutes">Minutos</string>
+    <string name="dummy_distance_km">1,1 km</string>
+    <string name="prompt_distance">Distancia</string>
+    <string name="dummy_section_name">Projetos Aprovados</string>
+    <string name="dummy_place_section_name">Jogos passados</string>
+    <string name="dummy_place_match_time">Hora: 8h-10h</string>
+    <string name="title_location">Places</string>
+    <string name="dummy_home_title">Screens Tour</string>
+    <string name="prompt_item_detail">Item Detail</string>
+    <string name="dummy_item_name">Cheese Salada + Fritas + Bebida + Sobremesa</string>
+    <string name="dummy_item_description">1 - Hamburger Artesanal 120g, cheddar, maionese, alface e tomate!</string>
+    <string name="prompt_add_observation">Add observation</string>
     <string name="action_settings">Settings</string>
+    <string name="prompt_forgot_password"><u>Esqueceu a senha?</u></string>
+    <string name="title_quiz">Quiz</string>
+    <string name="title_candidates">Candidatos</string>
+    <string name="title_legal_terms">Legal</string>
+    <string name="prompt_terms_conditions">Termos de Uso</string>
+    <string name="action_continue">Continuar</string>
+    <string name="prompt_password_recovery">Digite o email cadastrado</string>
+    <string name="you_are_logged_in">Conectado com sucesso!</string>
+    <string name="prompt_save">Salvar</string>
+    <string name="prompt_number_aggree">1 apoio</string>
+    <string name="prompt_candidate_name">Airton Sandoval</string>
+    <string name="prompt_candidate_similarity">50% compatibilidade</string>
+    <string name="prompt_candidate_situation">Em exercicio - SP</string>
+    <string name="dummy_quiz_question">As empresas no Brasil precisam ser regulamentadas para que cumpram com os cuidados ao meio ambiente, pois elas não fariam isso espontaneamente.</string>
+    <string name="prompt_exit">Sair</string>
+    <string name="prompt_about">Sobre</string>
+    <string name="prompt_faq">FAQ</string>
+    <string name="prompt_app_info">App info</string>
+    <string name="prompt_contact_us">Entrar em contato</string>
+    <string name="prompt_your_suggestion">Por favor, deixe-nos sua sugestão</string>
+    <string name="action_send">Enviar</string>
+    <string name="prompt_add_screenshots">Adicione screenshots (Opcional)</string>
+    <string name="dummy_app_version">Version 2.18.248</string>
+    <string name="dummy_inc"><![CDATA[2017–2018 B&C Software Inc.]]></string>
+    <string name="dummy_copyrights">Todos os direitos reservados.</string>
+    <string name="prompt_licenses">LICENSES</string>
+    <string name="prompt_candidate_number">Vote 1445</string>
+    <string name="prompt_candidate_team">PSDB</string>
+    <string name="prompt_app_version">Version 2.18.248</string>
+    <string name="dummy_question">Vou perder meu direito a voto utilizando este App?</string>
+    <string name="dummy_answer">Absolutamente não, animal. Isso não tem nada a ver nem para ser perguntado.</string>
+    <string name="prompt_update">Atualizar</string>
+    <string name="google_login_Text">Login with Google</string>
+    <string name="action_facebook_login">Login com Facebook</string>
+    <string name="prompt_recover_password">Recuperar Senha</string>
+    <string name="action_ask_password_recovery">Solicitar</string>
+    <string name="prompt_redefine_password">Redefinir Senha</string>
 </resources>
