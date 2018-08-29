@@ -12,11 +12,11 @@
     <include layout="@layout/layout_progress_bar" />
 
 
-    <ScrollView
-        android:id="@+id/login_outer_scroll"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
+    <!--<ScrollView-->
+        <!--android:id="@+id/login_outer_scroll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center">-->
 
         <LinearLayout
             android:id="@+id/login_container"
@@ -26,5 +26,5 @@
             >
         </LinearLayout>
 
-    </ScrollView>
+    <!--</ScrollView>-->
 </LinearLayout>

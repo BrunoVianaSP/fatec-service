@@ -27,8 +27,6 @@ import android.view.View;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
-import java.util.Objects;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import dev.fatecsp.user.ChangePasswordFragment;
@@ -68,8 +66,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     @BindView(R.id.login_progress)
     public View mProgressView;
 
-    @BindView(R.id.login_outer_scroll)
-    public ScrollView mLoginScrollView;
+//    @BindView(R.id.login_outer_scroll)
+//    public ScrollView mLoginScrollView;
 
     private LoginFragment loginFragment;
 
@@ -210,14 +208,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
             int shortAnimTime = getResources().getInteger(android.R.integer.config_shortAnimTime);
 
-             mLoginScrollView.setVisibility(show ? View.GONE : View.VISIBLE);
-             mLoginScrollView.animate().setDuration(shortAnimTime).alpha(
-                    show ? 0 : 1).setListener(new AnimatorListenerAdapter() {
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                     mLoginScrollView.setVisibility(show ? View.GONE : View.VISIBLE);
-                }
-            });
+//             mLoginScrollView.setVisibility(show ? View.GONE : View.VISIBLE);
+//             mLoginScrollView.animate().setDuration(shortAnimTime).alpha(
+//                    show ? 0 : 1).setListener(new AnimatorListenerAdapter() {
+//                @Override
+//                public void onAnimationEnd(Animator animation) {
+//                     mLoginScrollView.setVisibility(show ? View.GONE : View.VISIBLE);
+//                }
+//            });
 
             mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
             mProgressView.animate().setDuration(shortAnimTime).alpha(
@@ -231,7 +229,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // The ViewPropertyAnimator APIs are not available, so simply show
             // and hide the relevant UI components.
             mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
-             mLoginScrollView.setVisibility(show ? View.GONE : View.VISIBLE);
+//             mLoginScrollView.setVisibility(show ? View.GONE : View.VISIBLE);
         }
     }
 
