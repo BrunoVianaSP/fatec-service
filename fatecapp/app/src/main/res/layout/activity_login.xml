@@ -6,8 +6,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="@dimen/default_padding"
-    tools:context=".LoginActivity"
-    android:background="@color/colorAccent">
+    tools:context=".LoginActivity">
 
     <!-- Login progress -->
     <include layout="@layout/layout_progress_bar" />
@@ -27,6 +26,5 @@
             >
         </LinearLayout>
 
-        <!--<include layout="@layout/layout_signin"></include>-->
     </ScrollView>
 </LinearLayout>

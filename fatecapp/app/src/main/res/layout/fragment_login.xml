@@ -2,16 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorAccent"
     android:layout_gravity="center">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/colorAccent">
+        android:orientation="vertical">
 
-        <include layout="@layout/layout_app_name" />
+        <include layout="@layout/layout_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--<include layout="@layout/layout_app_name" />-->
 
         <include layout="@layout/layout_email" />
 
@@ -42,8 +45,8 @@
             android:text="@string/action_facebook_login"
             android:drawableLeft="@drawable/logo_facebook"
             android:background="@color/facebook_blue"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:padding="@dimen/small_padding"
             />
 
         <Button
@@ -51,10 +54,8 @@
             android:text="@string/google_login_Text"
             android:drawableLeft="@drawable/logo_google"
             android:textColor="@color/black"
-            android:background="@color/white"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            />
+            android:background="@color/google_button_color"
+            android:padding="@dimen/small_padding" />
 
     </LinearLayout>
 
