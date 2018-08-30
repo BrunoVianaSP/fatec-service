@@ -109,4 +109,5 @@
     <string name="prompt_recover_password">Recuperar Senha</string>
     <string name="action_ask_password_recovery">Solicitar</string>
     <string name="prompt_redefine_password">Redefinir Senha</string>
+    <string name="title_activity_schedule">ScheduleActivity</string>
 </resources>

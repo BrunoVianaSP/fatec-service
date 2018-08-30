@@ -30,10 +30,10 @@
 
 
     <!--<style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">-->
-        <!--<item name="android:colorAccent">@color/black</item>-->
-        <!--<item name="android:textColor">@color/black</item>-->
-        <!--<item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>-->
-        <!--<item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>-->
+    <!--<item name="android:colorAccent">@color/black</item>-->
+    <!--<item name="android:textColor">@color/black</item>-->
+    <!--<item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>-->
+    <!--<item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>-->
     <!--</style>-->
 
     <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
@@ -43,7 +43,6 @@
     <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
         <item name="android:textColor">@color/black</item>
     </style>
-
 
 
     <style name="button" parent="@android:style/Widget.Button">
@@ -114,7 +113,6 @@
     </style>
 
 
-
     <style name="normalTextStyle" parent="@android:style/Widget.TextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -155,7 +153,7 @@
         <item name="android:layout_height">match_parent</item>
     </style>
 
-    <style name="SwitchCompatStyle" >
+    <style name="SwitchCompatStyle">
         <item name="thumbTint">@color/switch_thumb_color</item>
         <item name="trackTint">@color/switch_track_color</item>
     </style>
