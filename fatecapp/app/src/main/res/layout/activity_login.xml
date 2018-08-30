@@ -11,13 +11,6 @@
     <!-- Login progress -->
     <include layout="@layout/layout_progress_bar" />
 
-
-    <!--<ScrollView-->
-        <!--android:id="@+id/login_outer_scroll"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="center">-->
-
         <LinearLayout
             android:id="@+id/login_container"
             android:layout_width="match_parent"
@@ -26,5 +19,4 @@
             >
         </LinearLayout>
 
-    <!--</ScrollView>-->
 </LinearLayout>

@@ -1,4 +1,4 @@
-package dev.fatecsp.schedule;
+package dev.fatecsp.user;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,18 +9,16 @@ import android.view.View;
 
 import dev.fatecsp.R;
 
-
-public class ScheduleActivity extends AppCompatActivity {
+public class UserActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_schedule);
+        setContentView(R.layout.activity_user);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.btnAddNewPerformance);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,7 +26,7 @@ public class ScheduleActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 }

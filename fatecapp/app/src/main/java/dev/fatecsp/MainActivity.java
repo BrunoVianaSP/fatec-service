@@ -14,7 +14,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import dev.fatecsp.performance.PerformanceActivity;
 import dev.fatecsp.schedule.ScheduleActivity;
+import dev.fatecsp.settings.SettingsActivity;
+import dev.fatecsp.user.UserActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -26,7 +29,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.btnAddNewPerformance);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -85,14 +88,21 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_home) {
             // Handle the camera action
-        } else if (id == R.id.nav_performance) {
+        }else if (id == R.id.nav_user) {
+            Intent i = new Intent(getApplicationContext(), UserActivity.class);
+            startActivity(i);
+        }
+        else if (id == R.id.nav_performance) {
+            Intent i = new Intent(getApplicationContext(), PerformanceActivity.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_schedule) {
             Intent i = new Intent(getApplicationContext(), ScheduleActivity.class);
             startActivity(i);
 
         } else if (id == R.id.nav_settings) {
-
+            Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_contact) {
