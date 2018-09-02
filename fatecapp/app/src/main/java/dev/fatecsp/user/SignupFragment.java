@@ -35,8 +35,6 @@ public class SignupFragment extends Fragment {
     private SignupFragmentListener mListener;
 
 
-
-
     public SignupFragment() {
         // Required empty public constructor
     }

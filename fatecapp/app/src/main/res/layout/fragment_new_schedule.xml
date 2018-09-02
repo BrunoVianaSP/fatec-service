@@ -5,22 +5,27 @@
     android:orientation="vertical"
     tools:context="dev.fatecsp.schedule.NewScheduleFragment">
 
-
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <include layout="@layout/layout_input_course"></include>
+
             <include layout="@layout/layout_input_subject"></include>
+
+            <include layout="@layout/layout_input_weekday"></include>
+
+            <include layout="@layout/layout_input_time"></include>
+
             <Button
                 android:id="@+id/btnSaveSchedule"
                 style="@style/button"
-                android:text="@string/action_save"
-                />
+                android:text="@string/action_search" />
         </LinearLayout>
     </ScrollView>
 

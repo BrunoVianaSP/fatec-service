@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:layout_marginTop="@dimen/default_margin"
     android:layout_marginBottom="@dimen/default_margin">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:gravity="left">
+
         <TextView
             style="@style/normalTextStyle"
             android:text="@string/proposal_user_contract"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
     </LinearLayout>
 
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="right">
+
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -5,5 +5,4 @@
     android:layout_height="@dimen/tiny_divider_height"
     android:background="@color/colorAccent"
     android:layout_marginTop="@dimen/small_margin"
-    android:layout_marginBottom="@dimen/small_margin">
-</LinearLayout>
+    android:layout_marginBottom="@dimen/small_margin"></LinearLayout>

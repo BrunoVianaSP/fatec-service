@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/small_list_height"
+    android:visibility="gone"
+    android:entries="@array/array_avalailable_time"
+
+    tools:showIn="@layout/layout_input_time"></ListView>

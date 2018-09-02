@@ -9,10 +9,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <include layout="@layout/layout_logo"
+        <include
+            layout="@layout/layout_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal" />
 
         <!--<include layout="@layout/layout_app_name" />-->
 
@@ -37,8 +38,7 @@
             android:text="Ou"
             android:textAlignment="center"
             android:autoLink="all"
-            android:textColorLink="@color/white"
-            />
+            android:textColorLink="@color/white" />
 
         <Button
             style="@style/button"
@@ -46,8 +46,7 @@
             android:drawableLeft="@drawable/logo_facebook"
             android:background="@color/facebook_blue"
             android:textColor="@color/white"
-            android:padding="@dimen/small_padding"
-            />
+            android:padding="@dimen/small_padding" />
 
         <Button
             style="@style/button"

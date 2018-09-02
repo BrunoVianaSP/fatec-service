@@ -4,5 +4,4 @@
     android:layout_width="@dimen/tiny_vetical_separator"
     android:layout_height="@dimen/tiny_vetical_height"
     android:background="@color/colorAccent"
-    android:layout_margin="@dimen/small_margin">
-</LinearLayout>
+    android:layout_margin="@dimen/small_margin"></LinearLayout>

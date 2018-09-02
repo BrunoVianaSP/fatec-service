@@ -1,33 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-tools:context=".user.ProfileFragment"
-android:padding="@dimen/small_padding">
-
-    <include layout="@layout/layout_user_header"/>
-
-<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center">
-    <LinearLayout
+    android:orientation="vertical"
+    tools:context=".user.ProfileFragment"
+    android:padding="@dimen/small_padding">
+
+    <include layout="@layout/layout_user_header" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-        <include layout="@layout/navigator_personal"/>
-        <include layout="@layout/navigator_favorites"/>
-        <include layout="@layout/navigator_legal"/>
-        <include layout="@layout/navigator_settings"/>
-        <include layout="@layout/navigator_suggestions"/>
-        <include layout="@layout/navigator_help"/>
-        <include layout="@layout/navigator_about"/>
-        <include layout="@layout/navigator_exit"/>
-    </LinearLayout>
-</ScrollView>
+        android:layout_gravity="center">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/navigator_personal" />
+
+            <include layout="@layout/navigator_favorites" />
+
+            <include layout="@layout/navigator_legal" />
+
+            <include layout="@layout/navigator_settings" />
+
+            <include layout="@layout/navigator_suggestions" />
+
+            <include layout="@layout/navigator_help" />
+
+            <include layout="@layout/navigator_about" />
+
+            <include layout="@layout/navigator_exit" />
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

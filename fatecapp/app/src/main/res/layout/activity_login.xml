@@ -11,12 +11,10 @@
     <!-- Login progress -->
     <include layout="@layout/layout_progress_bar" />
 
-        <LinearLayout
-            android:id="@+id/login_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/login_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
 
 </LinearLayout>

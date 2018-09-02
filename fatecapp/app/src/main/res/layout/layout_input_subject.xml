@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-    <android.support.design.widget.TextInputLayout
-        style="@style/textInputLayout">
-        <android.support.v7.widget.DropDownListView
+
+    <android.support.design.widget.TextInputLayout style="@style/textInputLayout">
+
+        <AutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/prompt_full_name"
+            android:hint="@string/prompt_subject"
             android:inputType="text"
             android:maxLines="1"
             android:singleLine="true"
             android:textColor="@color/primaryTextColor"
             android:textColorHint="@color/primaryTextColor"
-            />
+            android:drawableLeft="@drawable/ic_subject_black_24dp"
+            android:drawablePadding="@dimen/small_padding" />
     </android.support.design.widget.TextInputLayout>
+
+    <include layout="@layout/list_subject" />
+
 </LinearLayout>

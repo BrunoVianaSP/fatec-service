@@ -113,8 +113,6 @@ public class LoginFragment extends Fragment {
     }
 
 
-
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -144,6 +142,7 @@ public class LoginFragment extends Fragment {
      */
     public interface LoginFragmentListener {
         void loginButtonPressed();
+
         void forgotPasswordButtonPressed();
     }
 }

@@ -85,7 +85,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 //        Objects.requireNonNull(getSupportActionBar()).setTitle("Login");
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        loginFragment = LoginFragment.newInstance("","");
+        loginFragment = LoginFragment.newInstance("", "");
         fragmentTransaction.replace(R.id.login_container, loginFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
@@ -292,7 +292,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 //                showToast(getApplicationContext(), "Conectado com sucesso!", Toast.LENGTH_SHORT);
 
 
-                Intent i=new Intent(LoginActivity.this, MainActivity.class);
+                Intent i = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(i);
             }
         }, OPEN_MAIN_ACTIVITY_DELAY);
@@ -307,7 +307,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     public void forgotPasswordButtonPressed() {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        Fragment fragment = ForgotPasswordFragment.newInstance("","");
+        Fragment fragment = ForgotPasswordFragment.newInstance("", "");
         fragmentTransaction.replace(R.id.login_container, fragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
@@ -320,7 +320,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        Fragment fragment = ChangePasswordFragment.newInstance("","");
+        Fragment fragment = ChangePasswordFragment.newInstance("", "");
         fragmentTransaction.replace(R.id.login_container, fragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
@@ -347,20 +347,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         int ADDRESS = 0;
         int IS_PRIMARY = 1;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     /**

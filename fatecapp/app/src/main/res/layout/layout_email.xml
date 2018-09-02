@@ -5,8 +5,9 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:showIn="@layout/fragment_login">
-    <android.support.design.widget.TextInputLayout
-        style="@style/textInputLayout">
+
+    <android.support.design.widget.TextInputLayout style="@style/textInputLayout">
+
         <AutoCompleteTextView
             android:id="@+id/email"
             android:layout_width="match_parent"
@@ -15,8 +16,7 @@
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:singleLine="true"
-            android:drawableLeft="@drawable/ic_mail_black_24dp"
-            />
+            android:drawableLeft="@drawable/ic_mail_black_24dp" />
     </android.support.design.widget.TextInputLayout>
 </LinearLayout>
 

@@ -1,12 +1,22 @@
 package dev.fatecsp.schedule;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
+import android.widget.AdapterView;
+import android.widget.AutoCompleteTextView;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import dev.fatecsp.R;
 
@@ -20,6 +30,8 @@ import dev.fatecsp.R;
  * create an instance of this fragment.
  */
 public class NewScheduleFragment extends Fragment {
+    protected java.util.logging.Logger log = java.util.logging.Logger.getLogger(getClass().getName());
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -69,11 +81,44 @@ public class NewScheduleFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_new_schedule, container, false);
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        final AutoCompleteTextView weekday = view.findViewById(R.id.weekday);
+        final ListView weekdayList = view.findViewById(R.id.weekday_list);
+
+        weekdayList.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1,int position, long arg3) {
+                String selected = String.valueOf(weekdayList.getItemAtPosition(position));
+                weekday.setText(selected);
+                weekdayList.setVisibility(View.GONE);
+//                Toast.makeText(SuggestionActivity.this, "" + position, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        weekday.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                log.info("onTextChanged");
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                log.info("beforeTextChanged");
+                weekdayList.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                log.info("afterTextChanged");
+            }
+        });
+
     }
 
     @Override
@@ -104,7 +149,7 @@ public class NewScheduleFragment extends Fragment {
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
+
+        void search();
     }
 }

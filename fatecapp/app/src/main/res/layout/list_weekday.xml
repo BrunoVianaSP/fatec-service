@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weekday_list"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/small_list_height"
+    android:entries="@array/array_weekday"
+    android:visibility="gone"
+    android:layout_weight="1"
+    tools:showIn="@layout/layout_input_weekday"></ListView>

@@ -7,17 +7,18 @@
     android:layout_gravity="center"
     tools:context=".LoadingActivity">
 
-    <include layout="@layout/layout_logo"
+    <include
+        layout="@layout/layout_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center" />
     <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="match_parent"-->
-        <!--style="@style/titleStyle"-->
-        <!--android:layout_marginLeft="@dimen/default_margin"-->
-        <!--android:gravity="center_vertical"-->
-        <!--android:text="@string/dummy_user_name"-->
-        <!--android:textColor="@color/primaryTextColor"/>-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--style="@style/titleStyle"-->
+    <!--android:layout_marginLeft="@dimen/default_margin"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="@string/dummy_user_name"-->
+    <!--android:textColor="@color/primaryTextColor"/>-->
 
 </FrameLayout>

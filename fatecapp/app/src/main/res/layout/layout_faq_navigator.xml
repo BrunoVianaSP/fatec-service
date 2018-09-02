@@ -13,6 +13,7 @@
         android:layout_gravity="start"
         android:src="@drawable/ic_question_answer_white_24dp"
         android:contentDescription="TODO" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -21,7 +22,7 @@
         android:gravity="center_vertical"
         android:text="@string/prompt_faq"
         android:textColor="@color/primaryTextColor"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <ImageView
         android:layout_width="0dp"

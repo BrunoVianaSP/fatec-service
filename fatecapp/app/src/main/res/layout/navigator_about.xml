@@ -12,6 +12,7 @@
         android:layout_gravity="start"
         android:src="@drawable/ic_assignment_late_white_24dp"
         android:contentDescription="TODO" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -19,7 +20,7 @@
         android:layout_marginLeft="@dimen/default_margin"
         android:gravity="center_vertical"
         android:text="@string/prompt_about"
-        android:textColor="@color/primaryTextColor"/>
+        android:textColor="@color/primaryTextColor" />
 
     <ImageView
         android:layout_width="0dp"

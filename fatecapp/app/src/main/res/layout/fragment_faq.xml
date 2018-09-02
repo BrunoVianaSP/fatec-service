@@ -10,8 +10,7 @@
         android:layout_height="wrap_content"
         style="@style/titleStyle"
         android:layout_margin="@dimen/text_margin"
-        android:text="@string/dummy_question"
-        />
+        android:text="@string/dummy_question" />
 
     <TextView
         android:id="@+id/content"

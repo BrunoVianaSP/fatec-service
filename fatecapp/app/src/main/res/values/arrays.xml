@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_avalailable_time">
+        <item>Manha</item>
+        <item>Tarde</item>
+        <item>Noite</item>
+    </string-array>
+
+    <string-array name="array_weekday">
+        <item>Domingo</item>
+        <item>Segunda-Feira</item>
+        <item>Terca-Feira</item>
+        <item>Quarta-Feira</item>
+        <item>Quinta-Feira</item>
+        <item>Sexta-Feira</item>
+        <item>Sabado</item>
+    </string-array>
+
+    <string-array name="array_subjects">
+        <item>Analise e Desenvolvimento de Sistemas</item>
+        <item>Mecanica de Precisao</item>
+        <item>Design de Interiores </item>
+        <item>Fisica</item>
+        <item>Matematica</item>
+        <item>Quimica</item>
+        <item>Administracao</item>
+        <item>Secretariado</item>
+    </string-array>
+
+
+</resources>

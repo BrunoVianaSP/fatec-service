@@ -10,18 +10,19 @@
         style="@style/titleStyle"
         android:layout_gravity="center_horizontal"
         android:text="@string/prompt_terms_conditions"
-        android:textColor="@color/primaryTextColor"/>
+        android:textColor="@color/primaryTextColor" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/normalTextStyle"
             android:layout_margin="@dimen/tiny_margin"
             android:text="@string/dummy_legal_terms"
-            android:textColor="@color/primaryTextColor"/>
+            android:textColor="@color/primaryTextColor" />
     </ScrollView>
 
 
