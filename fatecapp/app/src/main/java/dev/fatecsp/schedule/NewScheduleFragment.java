@@ -1,8 +1,6 @@
 package dev.fatecsp.schedule;
 
-import android.app.Dialog;
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -12,11 +10,9 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import dev.fatecsp.R;
 
@@ -86,8 +82,7 @@ public class NewScheduleFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         final AutoCompleteTextView weekday = view.findViewById(R.id.weekday);
-        final ListView weekdayList = view.findViewById(R.id.weekday_list);
-
+        final ListView weekdayList = view.findViewById(R.id.weekdayList);
         weekdayList.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
             @Override
@@ -95,10 +90,8 @@ public class NewScheduleFragment extends Fragment {
                 String selected = String.valueOf(weekdayList.getItemAtPosition(position));
                 weekday.setText(selected);
                 weekdayList.setVisibility(View.GONE);
-//                Toast.makeText(SuggestionActivity.this, "" + position, Toast.LENGTH_SHORT).show();
             }
         });
-
 
         weekday.addTextChangedListener(new TextWatcher() {
 
@@ -118,6 +111,109 @@ public class NewScheduleFragment extends Fragment {
                 log.info("afterTextChanged");
             }
         });
+
+
+        final AutoCompleteTextView course = view.findViewById(R.id.course);
+        final ListView courseList = view.findViewById(R.id.courseList);
+
+        courseList.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1,int position, long arg3) {
+                String selected = String.valueOf(courseList.getItemAtPosition(position));
+                course.setText(selected);
+                courseList.setVisibility(View.GONE);
+            }
+        });
+
+        course.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                log.info("onTextChanged");
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                log.info("beforeTextChanged");
+                courseList.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                log.info("afterTextChanged");
+            }
+        });
+
+
+
+        final AutoCompleteTextView subject = view.findViewById(R.id.subject);
+        final ListView subjectList = view.findViewById(R.id.subjectList);
+
+        subjectList.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1,int position, long arg3) {
+                String selected = String.valueOf(subjectList.getItemAtPosition(position));
+                subject.setText(selected);
+                subjectList.setVisibility(View.GONE);
+            }
+        });
+
+        subject.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                log.info("onTextChanged");
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                log.info("beforeTextChanged");
+                subjectList.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                log.info("afterTextChanged");
+            }
+        });
+
+
+        final AutoCompleteTextView time = view.findViewById(R.id.time);
+        final ListView timeList = view.findViewById(R.id.timeList);
+
+        timeList.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1,int position, long arg3) {
+                String selected = String.valueOf(timeList.getItemAtPosition(position));
+                time.setText(selected);
+                timeList.setVisibility(View.GONE);
+            }
+        });
+
+        time.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                log.info("onTextChanged");
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                log.info("beforeTextChanged");
+                timeList.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                log.info("afterTextChanged");
+            }
+        });
+
+
+
 
     }
 

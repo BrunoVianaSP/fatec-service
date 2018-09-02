@@ -17,15 +17,26 @@
         <item>Sabado</item>
     </string-array>
 
-    <string-array name="array_subjects">
+    <string-array name="array_courses">
+        <item>Administracao</item>
         <item>Analise e Desenvolvimento de Sistemas</item>
-        <item>Mecanica de Precisao</item>
         <item>Design de Interiores </item>
         <item>Fisica</item>
-        <item>Matematica</item>
         <item>Quimica</item>
-        <item>Administracao</item>
+        <item>Mecanica de Precisao</item>
+        <item>Matematica</item>
         <item>Secretariado</item>
+    </string-array>
+
+    <string-array name="array_subjects">
+        <item>Fisica I</item>
+        <item>Fisica II</item>
+        <item>Design de Interiores I</item>
+        <item>Fisica III</item>
+        <item>Quimica I</item>
+        <item>Materiais</item>
+        <item>Gestao de Projeto</item>
+        <item>Seguranca da Informacao</item>
     </string-array>
 
 
